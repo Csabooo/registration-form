@@ -1,0 +1,93 @@
+body {
+  font-family: Poppins, sans-serif;
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url("../image/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+}
+
+p {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+
+}
+
+
+form {
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 60vh;
+  min-width: 300px;
+  margin: 40px auto;
+  padding-bottom: 2em;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+form p {
+  color: white;
+  text-align: unset;
+  font-size: 1.5rem;
+  font-weight: unset;
+  font-style: unset;
+
+}
+
+label {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+
+}
+
+fieldset {
+  border: none;
+  margin: 0 auto 1.25rem auto;
+  padding: 0;
+}
+
+.inline {
+  display: inline;
+  width: 2rem;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input,
+textarea,
+select,
+button {
+  box-sizing: border-box;
+  min-height: 1rem;
+  margin: 10px 0;
+  width: 100%;
+  min-height: 2em;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: gray;
+  font-family: inherit;
+}
+
+button {
+  display: block;
+  background-color: rgb(105, 185, 105);
+  width: 100%;
+  padding: 40px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

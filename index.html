@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regisztrációs űrlap</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+
+<body>
+  <main>
+    <h1 id="title">Felmérési űrlap</h1>
+    <p id="description">Köszönönjük, hogy időt szánsz rá, hogy segíts nekünk a platform fejlesztésében</p>
+
+    <form action="" method="post" id="survey-form">
+
+      <fieldset>
+        <label id="name-label">Neved:</label>
+        <input id="name" type="text" placeholder="Vezetéknév Keresztnév" required>
+        <label id="email-label">Email címed:</label>
+        <input id="email" type="email" placeholder="aaa@web.com" required>
+        <label id="number-label">Életkorod:</label>
+        <input id="number" type="number" min="18" max="120" placeholder="Életkor" required>
+      </fieldset>
+
+      <fieldset>
+        <p>Melyik lehetőség írja le legjobban a szerepedet az alábbiak közül?</p>
+        <select id="dropdown">
+          <option value="">Válassz egyet</option>
+          <option value="1">Tanuló</option>
+          <option value="2">Teljes munkaidős állás</option>
+          <option value="3">Nappali tagozatos diák</option>
+          <option value="4">Inkább nem mondom el</option>
+          <option value="5">Más</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <p>Javasolnád-e az oldalt a barátaidnak?</p>
+        <label><input id="Határozottan" value="1" name="recommend" type="radio" class="inline"
+            for="Határozottan">Határozottan</label>
+        <label><input id="Talán" value="2" name="recommend" type="radio" class="inline">Talán</label>
+        <label><input id="Nem biztos" value="3" name="recommend" type="radio" class="inline">Nem biztos</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="referrer">Honnan hallottál rólunk?</label>
+        <select id="dropdown">
+          <option value="">Válassz egyet</option>
+          <option value="1">Internet</option>
+          <option value="2">TV</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <p>Mit szeretnél látni, hogy fejlődjön?</p>
+        <label><input type="checkbox" value="frontend" class="inline">Front-end projektek</label>
+        <label><input type="checkbox" value="backend" class="inline">Back-end projektek</label>
+        <label><input type="checkbox" value="kihívások" class="inline">Kihívások</label>
+      </fieldset>
+
+      <fieldset>
+        <p>Van valami javaslatod?</p>
+        <textarea placeholder="Írd ide a megjegyzésedet" rows="5" cols="30"></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit" value="Submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
